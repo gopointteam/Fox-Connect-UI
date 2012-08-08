@@ -1,0 +1,61 @@
+/*!
+ * Home v0.0.1
+ * (To be built from Global.css)
+ *
+ */
+
+/****************** 
+	Tag Styles 
+******************/
+
+.search_btn { width:20px; height:20px; cursor:pointer; display:block; position:absolute; right:0; top:0;}
+
+
+span.dotted-underline { border-bottom: 1px dotted #333333; text-decoration: none; color:#0088CC; cursor:pointer}
+span.dotted-underline:hover { color:#005580; }
+
+
+.purchase_popup			{ display:none; position:absolute;  z-index:10000;  }
+
+#purchase_popup_container 				{ width:330px; height:306px; background:url(../img/bg_popup.png) no-repeat left top; position:relative; }
+
+#purchase_popup_content	  				{ float:left; width:276px; margin-top:22px; margin-left:31px;
+										  height:56px; background:url(../img/bg_popup_heading.png) repeat-x left top;
+										  -webkit-border-radius:5px 5px 0 0; -moz-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0; }
+							  
+#purchase_popup_content	.heading		{ width:266px; height:46px; margin-left:5px; padding-top:10px; }
+
+#purchase_popup_content h2				{ font-size:16px; color:#FFFFFF; font-weight:bold; line-height:18px; padding:0px;  }
+
+#purchase_popup_content span.small 		{ font-size:13px; color:#cccccc;  }
+
+.wish_list_row 							{ background:#efefef; padding:7px; color:#333333; font-size:11px; }
+.wish_list_row .pull-right				{ color:#00729e; }
+.popup_row								{ width:266px; height:35px; border-bottom:1px dashed #CCCCCC; padding-bottom:5px; margin:5px 0 0 5px; }
+
+img#close								{ color:#999999; position:absolute; right:10px; top:10px; }
+
+
+.popup_row small						{ font-size:11px; color:#9b9b9b; }
+.popup_row a							{ background:url(../img/fc_btn_strip.png) no-repeat 0 0; outline:none;
+										  display:block; float:right; padding:0; text-indent:-1000em;}
+										  
+.popup_row	i.big_price						{ font-size:15px; font-weight:bold; font-style:normal; }
+.popup_row a.buy_blu_ray:link				{ width:102px; height:30px; background-position:0px 0px; }
+.popup_row a.buy_blu_ray:visited			{ width:102px; height:30px; background-position:0px -80px; }
+.popup_row a.buy_blu_ray:hover				{ width:102px; height:30px; background-position:0px -40px; }
+.popup_row a.buy_blu_ray::acitve			{ width:102px; height:30px; background-position:0px -40px; }
+
+
+.popup_row	i.normal_price			{ font-size:13px; font-weight:bold; font-style:normal; }
+.popup_row a.buy_dvd:link			{ width:102px; height:25px; background-position:0px -210px; margin-top:5px; }
+.popup_row a.buy_dvd:visited		{ width:102px; height:25px; background-position:0px -240px; margin-top:5px; }
+.popup_row a.buy_dvd:hover			{ width:102px; height:25px; background-position:0px -270px; margin-top:5px; }
+.popup_row a.buy_dvd:acitve			{ width:102px; height:25px; background-position:0px -240px; margin-top:5px; }
+
+
+.popup_row	i.small_price			{ font-size:11px; font-weight:bold; font-style:normal; }
+.popup_row a.download:link			{ width:102px; height:25px; background-position:0px -300px; margin-top:5px; }
+.popup_row a.download:visited		{ width:102px; height:25px; background-position:0px -360px; margin-top:5px; }
+.popup_row a.download:hover			{ width:102px; height:25px; background-position:0px -330px; margin-top:5px; }
+.popup_row a.download:acitve		{ width:102px; height:25px; background-position:0px -360px; margin-top:5px; }
