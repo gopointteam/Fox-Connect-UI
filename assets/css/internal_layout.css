@@ -1,8 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 
-h2					{ font-family:"Myriad Pro", Helvetica, Arial, sans-serif; color:#333333; font-size:18px; font-weight:bold; }
-h2 .differ			{ font-family:"Helvetica Bold", Helvetica, Arial; font-weight:normal; color:#666666; }
 
 /* --------- Right Side Shopping Cart --------- */
 
@@ -28,21 +26,16 @@ h2 .differ			{ font-family:"Helvetica Bold", Helvetica, Arial; font-weight:norma
 
 #s_cart_wr .movie_price			{ font-size:12px; color:#333333; padding-right:20px; }
 
-#s_cart_wr .btn_small			{ background:#474747 url(../img/movie_titles/bg_small_btn.jpg) repeat-x left top; color:#FFFFFF; border:none;
-								  font-size:10px; line-height:15px; font-weight:bold;
-								  -mox-border-radius:4px; -webkid-border-radius:4px; border-radius:4px; }
-								  
-#s_cart_wr .btn_small:hover		{ color:#CCCCCC; }
 								  
 #s_cart_wr .s_cart_row a		{ font-size:11px; margin-right:5px; }
 #s_cart_wr .separate			{ font-size:10px; color:#cccccc; margin-right:5px;}
 
 #s_cart_wr .checkout_box		{ width:260px; background:#e8f7fc; padding:10px; margin-left:5px; text-align:right; }
 
-.checkout_box a.checkout_btn	{ width:111px; height:40px; display:inline-block; margin-left:24px;
+/*.checkout_box a.checkout_btn	{ width:111px; height:40px; display:inline-block; margin-left:24px;
 								  background:url(../img/checkout_btn.png) no-repeat left top;}
 								  
-.checkout_box a.checkout_btn:hover	{ background-position:left bottom }
+.checkout_box a.checkout_btn:hover	{ background-position:left bottom }*/
 
 .checkout_box .price			{ font-size:22px; color:#e75d01; font-weight:bold; }
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 	<head>
         <meta charset="utf-8">
@@ -32,7 +32,6 @@
     <body>
     	<!-- Header Begins--->
         <div class="navbar fx-header"> <!-- NAVBAR Begins -->
-            <a name="#fx-banner"></a>
             <div class="fx-navbar-inner"> <!-- NAVBAR-INNER Begins -->
                 <div class="fx-container">  <!-- CONTAINER Begins -->
                     <a href="../index.html" class="brand"><img src="../assets/img/fc_logo.png" /></a>
@@ -98,13 +97,17 @@
                                 <ul class="pull-left fx-poular-trends">
                                     <li class="nav-header"><img src="../assets/img/graph.png" /><span class="black bold">Popular</span> <span>Trends</span></li>
                                     <li class="divider"></li>
-                                    <li><a href="#">Action (320)</a></li>
-                                    <li><a href="#">Adventure (190)</a></li>
-                                    <li><a href="#">Animation (105)</a></li>
-                                    <li><a href="#">Classic (178)</a></li>
-                                    <li><a href="#">Comedy (105)</a></li>
-                                    <li><a href="#">Crime (105)</a></li>
-                                    <li><a href="#">Documentary (105)</a></li>
+                                    <li><a href="#"><span class="small_title">Top Genre</span><br>Romantic Comedy</a></li>
+                                    <li class="divider-dot"></li>
+                                    <li><a href="#"><span class="small_title">Top Decade</span><br>2010s</a></li>
+                                    <li class="divider-dot"></li>
+                                    <li><a href="#"><span class="small_title">Top Rating</span><br>PG-13</a></li>
+                                    <li class="divider-dot"></li>
+                                    <li><a href="#"><span class="small_title">Top Movie</span><br>StarWars: The Empire Strlkes Back</a></li>
+                                    <li class="divider-dot"></li>
+                                    <li><a href="#"><span class="small_title">In San Jose, CA</span><br>Chronicle</a></li>
+                                    <li class="divider-dot"></li>
+                                    <li><a href="#"><span class="small_title">Newest Release</span><br>The Killing</a></li>
                                 </ul>
 
 
@@ -143,7 +146,7 @@
                             </ul>
                         </div>
 
-                        <form id="SearchForm" class="navbar-search pull-right" action="../search-results">
+                        <form id="SearchForm" class="navbar-search pull-right" action="index.html">
                             <div class="btn-group" id="fx-select-category">
                                 <button class="btn fx-btn">Movies</button>
                                 <button data-toggle="dropdown" class="btn dropdown-toggle">
@@ -155,7 +158,7 @@
                                     <li><a href="#">Videos</a></li>
                                 </ul>
                             </div>
-                            <a href="../search-results" class="search_btn"></a>
+                           <input type="submit" id="search_btn" value="">
                           <input type="text" class="search-query" placeholder="Title, Director, Genre, or Year">
                         </form>
 
@@ -169,24 +172,22 @@
         <div class="fx-body-container"> <!-- BODY CONTAINER -->
             <div class="fx-content"> <!-- FX CONTENT -->
             
-				<div id="fx_result_strip">
-                	<div id="fx_result_content">
+                <div id="fx_content_conatiner" class="clearfix">    	
+                
+                    <div id="fx_result_strip">
+                		<div id="fx_result_content">
 						<ul class="unstyled">
                         	<li class="pull-right back_to_home"><i class="fx-icon-back"></i><a href="../index.html">Back to Home</a></li>
                             <li class="pull-left no">372</li>
                             <li class="title">Movies and Television<br>
                             	<small>Results Found</small>
                             </li>
-                            
                         </ul>
+                		</div>
                 	</div>
-                </div>
-                
-                
-                
-                
-                <div id="fx_content_conatiner">
-                	<div id="nav_after_result">
+                    
+                    
+                    <div id="nav_after_result">
                         <ul>
                             <li class="dropdown parent">
                                 <span class="small_title">Media Type</span>
@@ -233,18 +234,19 @@
                                 </form>   
                             </li>
                       </ul>
-                	</div>
-                
-                	<div style="clear:both;"></div>
+                    </div>
                     
-                    <div id="fx_inner_content"><!-- FX INNER CONTENT Begins -->
+                    <div style="clear:both;"></div>
+                    
+
                     	
                         <div id="content_left">
                         	<div id="search_view_control"> <!-- Search view control begins -->
                             
                                 <div class="pagination">
                                 <ul>
-                                <li><a href="#"><i class="fx-icon-arrow-left"></i>Prev</a></li>
+                                <li><a href="#"><i class="fx-icon-arrow-left"></i></a></li>
+                                <li><a href="#">Prev</a></li>
                                 <li class="active"><a href="#">1</a></li>
                                 <li class="separator">|</li>
                                 <li ><a href="#">2</a></li>
@@ -252,7 +254,8 @@
                                 <li class="separator">|</li>
                                 <li><a href="#">4</a></li>
                                 <li class="separator">|</li>
-                                <li><i class="fx-icon-arrow-right"></i> <a href="#">Next</a></li>
+                                <li> <a href="#">Next</a></li>
+                                <li> <a href="#"><i class="fx-icon-arrow-right"></i></a></li>
                                 </ul>
                                 </div>
                                 
@@ -274,6 +277,7 @@
                             
                             <div id="thumbnail_container">
                             	<div id="thumbnail_box" >
+                                	<span class="wishlist_element"></span>
                                 	<img src="../assets/img/movie_titles/01.Behind Enemy Lines.jpg" id="pr1" />
                                     <br />
                                     <span>Behind Enemy Lines</span><br/>
@@ -296,20 +300,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -338,20 +342,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -378,20 +382,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -418,20 +422,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -458,20 +462,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -498,20 +502,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -538,20 +542,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -578,20 +582,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="../product-details"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -618,20 +622,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -658,20 +662,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -698,20 +702,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -738,20 +742,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -778,20 +782,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -818,20 +822,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -858,20 +862,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -898,20 +902,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -938,20 +942,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -978,20 +982,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -1018,20 +1022,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -1058,20 +1062,20 @@
                                                         <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_blu_ray">Buy Blu-ray</a>
+                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
                                                         <i class="fx-icon-movie orange big_price">$9.99</i><br>
                                                         <small>(Save 30% over retail)</small>                                                    </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="buy_dvd">Buy DVD</a>
+                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
                                                         <i class="fx-icon-tv orange normal_price">$9.99</i><br>
                                                     </div>
                                                     
                                                     <div class="popup_row">
-                                                        <a href="#" class="download">Download</a>
+                                                        <a href="#" class="download-btn">Download</a>
                                                         <i class="fx-icon-tv orange small_price">$9.99</i><br>
                                                     </div>
-                                                    <a href="#"><i class="fx-icon-arrow-right"></i>View more Details</a>                                                </div>
+                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
                                            </div>
                                     </div>
                               </div>
@@ -1081,15 +1085,17 @@
                                 <div id="bottom_pagination"> <!-- bottom Pagination begins -->
                                 	<div class="pagination">
                                 <ul>
-                                <li><a href="#"><i class="fx-icon-arrow-left"></i>Prev</a></li>
-                                <li class="active"><a href="page-1.html">1</a></li>
+                                <li><a href="#"><i class="fx-icon-arrow-left"></i></a></li>
+                                <li><a href="#">Prev</a></li>
+                                <li class="active"><a href="#">1</a></li>
                                 <li class="separator">|</li>
-                                <li ><a href="page-2.html">2</a></li>
-                                <li><a href="page-3.html">3</a></li>
+                                <li ><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
                                 <li class="separator">|</li>
-                                <li><a href="page-4.html">4</a></li>
+                                <li><a href="#">4</a></li>
                                 <li class="separator">|</li>
-                                <li><i class="fx-icon-arrow-right"></i> <a href="page-2.html">Next</a></li>
+                                <li> <a href="#">Next</a></li>
+                                <li> <a href="#"><i class="fx-icon-arrow-right"></i></a></li>
                                 </ul>
                                 </div>
                             	</div> <!-- bottom Pagination -->
@@ -1123,7 +1129,7 @@
                                 <div style="clear:both;"></div>
                                 
                                 
-                                <!-- myCarousel1 -->
+                                <!-- myCarousel -->
                                 <div id="myCarousel1" class="carousel slide">
                                 
                                 	<div class="view_all_search">
@@ -1284,27 +1290,27 @@
                                 
                                 <div style="clear:both;"></div>
                                 
-                                <a name="popular"></a>
+                                <a href="#" name="popular"></a>
                                 <div id="fx-popular" class="fx-title-header margin-left">
                                     <ul class="nav nav-pills">
                                         <li class="title-text">Popular</li>
                                         <li class=""><a href="#alerts">Show me more...</a> </li>
-                                        
                                     </ul>
                 
                                     <!-- Pagination -->
+                
                                     <div class="pagination" style="left:0;">
                                         <ul>
                                             <li>
-                                                <a href="#popular" class="nav-btn current"></a>
+                                                <a class="nav-btn current"></a>
                                             </li>
-                                            
                                             <li><a href="#popular" class="nav-btn"></a></li>
                                             <li><a href="#popular" class="nav-btn"></a></li>
                                             <li><a href="#popular" class="nav-btn"></a></li>
                                         </ul>
                                     </div>
                                     <!-- Pagination Ends -->
+                                    
                                     <a class="btn fx-right_sl" href="#myCarousel2" data-slide="next"><b class="caret"></b></a>
                                     <a class="btn fx-left_sl" href="#myCarousel2" data-slide="prev"><b class="caret"></b></a>
                                 </div>
@@ -1314,8 +1320,8 @@
                                 
                                 <!-- myCarousel2 -->
                                 <div id="myCarousel2" class="carousel slide">
-                                    
-                                    <div class="view_all_search">
+                                
+                                	<div class="view_all_search">
                                         <div class="text">View All</div>
                                         <div class="no">64</div>
                                         <div class="text" wrap="wrap">New Releases</div>
@@ -1325,6 +1331,41 @@
                                     <div class="carousel-inner inner_width" >
                                     
                                         <!---- 1 ----->
+                                        <div class="active item">
+                                            <div>
+                                                <img src="../assets/img/movie_titles/movie_pic.png" />
+                                                <br />
+                                                <span>Behind Enemy Lines</span><br/>
+                                                <i class="fx-icon-movie orange">$19.99</i>
+                                                <span class="sep">|</span>
+                                                <span>
+                                                    <a href="#" class="dotted-underline">Purchase</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                               <img src="../assets/img/movie_titles/02.jpg" />
+                                                <br />
+                                                <span>The Killing, S1</span><br/>
+                                                <i class="fx-icon-tv orange">$31.99</i>
+                                                <span class="sep">|</span>
+                                                <span>
+                                                    <a href="#" class="dotted-underline">Purchase</a>
+                                                </span>
+                                            </div>
+                                            <div>
+                                                <img src="../assets/img/movie_titles/03.jpg" />
+                                                <br />
+                                                <span>Breakout Kings, S1</span><br/>
+                                                <i class="fx-icon-movie orange">$25.99</i>
+                                                <span class="sep">|</span>
+                                                <span>
+                                                    <a href="#" class="dotted-underline">Purchase</a>
+                                                </span>
+                                            </div>
+                                            
+                                            
+                                        </div>
+                                        <!---- 2 ----->
                                         <div class="item">
                                             <div>
                                             <img src="../assets/img/movie_titles/05.jpg" />
@@ -1361,7 +1402,7 @@
                                             
                                         </div>
                 
-                                        <!---- 2 ----->
+                                        <!---- 3 ----->
                                         <div class="item">
                                             <div>
                                                 <img src="../assets/img/movie_titles/09.jpg" />
@@ -1397,7 +1438,7 @@
                                             </div>                                            
                                         </div>
                 
-                                        <!---- 3 ----->
+                                        <!---- 4 ----->
                                         <div class="item">
                                             <div>
                                                 <img src="../assets/img/movie_titles/movie_pic.png" />
@@ -1431,47 +1472,9 @@
                                             </div>
                                             
                                         </div>
-                                        
-                                        <!---- 4 ----->
-                                        <div class="active item">
-                                            <div>
-                                                <img src="../assets/img/movie_titles/movie_pic.png" />
-                                                <br />
-                                                <span>Behind Enemy Lines</span><br/>
-                                                <i class="fx-icon-movie orange">$19.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                               <img src="../assets/img/movie_titles/02.jpg" />
-                                                <br />
-                                                <span>The Killing, S1</span><br/>
-                                                <i class="fx-icon-tv orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <img src="../assets/img/movie_titles/03.jpg" />
-                                                <br />
-                                                <span>Breakout Kings, S1</span><br/>
-                                                <i class="fx-icon-movie orange">$25.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        
                                     </div> <!-- Carouse2 items ENDs-->
                 					
                                 </div> <!-- myCarousel2 ENDs -->
-                                <!-- New Releases Block -->
 
                                 
                                 
@@ -1498,7 +1501,7 @@
                                     <button class="btn_small">Blu-ray</button><br>
                                     <a href="#">Move to Wishlist</a>
                                     <span class="separate">|</span>
-                                    <a href="#">Remove</a>
+                                    <a href="#" class="remove_item">Remove</a>
                                 </div>
                                 
                                 <div class="s_cart_row">
@@ -1508,7 +1511,7 @@
                                     <button class="btn_small">DVD</button><br>
                                     <a href="#">Move to Wishlist</a>
                                     <span class="separate">|</span>
-                                    <a href="#">Remove</a>
+                                    <a href="#" class="remove_item">Remove</a>
                                 </div>
                                 
                                 <div class="s_cart_row">
@@ -1518,7 +1521,7 @@
                                     <button class="btn_small">DVD</button><br>
                                     <a href="#">Move to Wishlist</a>
                                     <span class="separate">|</span>
-                                    <a href="#">Remove</a>
+                                    <a href="#" class="remove_item">Remove</a>
                                 </div>
                                 
                                 <div class="checkout_box">
@@ -1560,7 +1563,6 @@
                         
                         <div class="clearfix"></div>
                     	
-                    </div><!-- FX INNER CONTENT -->
                 </div>
 
             </div> <!-- FX CONTENT -->
@@ -1708,15 +1710,33 @@
             });
 			
 			
-			//Carousel 3 Settings
-            $('#myCarousel3').carousel({
-                interval: false
-            });
-            
-			$('#fx-feature .pagination ul li a').bind('click', function(){  
-                $('#myCarousel3').carousel($('#fx-feature .pagination ul li a').index(this));
-                $(this).toggleClass('current', '');
-            });
+			
+			
+			$('#fx-new-releases .fx-right_sl').bind('click', function(){ clickedPage = $("#myCarousel1 .active").index()+1;   
+			$('#fx-new-releases .pagination ul li a').removeClass('current');
+			if(clickedPage==4) { clickedPage=0; } 
+			$('#fx-new-releases .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			});
+			
+			$('#fx-new-releases .fx-left_sl').bind('click', function(){ clickedPage = $("#myCarousel1 .active").index()-1;   
+			$('#fx-new-releases .pagination ul li a').removeClass('current');
+			if(clickedPage==-1) { clickedPage=3; } 
+			$('#fx-new-releases .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			});
+			
+			
+			
+			$('#fx-popular .fx-right_sl').bind('click', function(){ clickedPage = $("#myCarousel2 .active").index()+1;  
+			$('#fx-popular .pagination ul li a').removeClass('current');
+			if(clickedPage==4) { clickedPage=0; } 
+			$('#fx-popular .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			});
+			
+			$('#fx-popular .fx-left_sl').bind('click', function(){ clickedPage = $("#myCarousel2 .active").index()-1;   
+			$('#fx-popular .pagination ul li a').removeClass('current');
+			if(clickedPage==-1) { clickedPage=3; } 
+			$('#fx-popular .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			});
 			
 			$(document).ready(function(){
 			
@@ -1728,13 +1748,13 @@
 					
 					$('.purchase_popup').hide("fast");
 					
-					var offset=$('#'+this.id).position();
+					var position=$('#'+this.id).position();
 					$('#'+this.id+"_popup").show("slow");
 
-					$('#'+this.id+"_popup").css('top',position.top);
-					$('#'+this.id+"_popup").css('left',position.left);
+					$('#'+this.id+"_popup").css('top',position.top+40);
+					$('#'+this.id+"_popup").css('left',position.left +130);
 					
-					});	
+				});	
 					
 				$("#thumbnail_box img").click(function(){
 					
@@ -1746,7 +1766,12 @@
 					$('#'+this.id+"_popup").css('top',position.top);
 					$('#'+this.id+"_popup").css('left',position.left);
 					
-					});	
+				});
+					
+				$(".remove_item").click(function(){
+					$(this).parent().hide('slow');
+				});
+					
 
 			});
 			
