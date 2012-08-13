@@ -10,20 +10,20 @@
 
 
 /****************************** Hero Module ******************************************/
-.fx-body-container{
+.body-container{
 	width: 100%;
 	background: #FFFFFF url("../img/body_bg.jpg") repeat-x;
 }
-.fx-body-container .fx-content{
+.body-container .content{
 	margin: auto;
 	width: 1000px;
 }
 
-#fx-banner{
+#banner{
     height: 484px;
 }
 
-#fx-banner.fx-hero-unit{
+#banner.hero-unit{
     margin-top: 5px;
     background: #EEEEEE;
     margin-bottom: 20px;
@@ -194,7 +194,7 @@
 }
 
 
-#heroCarousel.carousel .description .btn-group .btn.fx-btn{
+#heroCarousel.carousel .description .btn-group .btn.btn{
     width: 98px;
     height: 40px;
 }
@@ -248,7 +248,7 @@
 #heroCarousel.carousel .description .strip ul li a:hover{color: #999999; padding: 0px 30px;}
 
 
-.fx-icon-watch_trailer_btn{z-index: 2; position: relative; top: -100px; width: 70%; text-align: center;}
+.icon-watch_trailer_btn{z-index: 2; position: relative; top: -100px; width: 70%; text-align: center;}
 
 #heroCarousel.carousel .carousel-inner{
     height: 458px;
@@ -258,7 +258,7 @@
 
 
 /***** Pagination ********/
-#fx-banner .pagination {
+#banner .pagination {
     float: right;
     height: 0;
     left: 0;
@@ -266,17 +266,17 @@
     top: -110px;
     z-index: 100;
 }
-#fx-banner .pagination li a.nav-btn:hover{
+#banner .pagination li a.nav-btn:hover{
     background-color: transparent;
 }
 
 /******************* Tabs **************/
-#fx-banner .tabbable{
+#banner .tabbable{
     position: relative;
     top: -106px;
 }
 
-#fx-banner .tabbable .navbar-inner{
+#banner .tabbable .navbar-inner{
     border-radius: 0px;
     min-height: 31px;
     position: relative;
@@ -284,12 +284,12 @@
     margin-bottom: 0px;
 }
 
-#fx-banner .tabbable .navbar-inner.nav.nav-tabs li{
+#banner .tabbable .navbar-inner.nav.nav-tabs li{
     width: 120px;
     text-align: center;
 }
 
-#fx-banner .navbar-inner.nav.nav-tabs > li > a{
+#banner .navbar-inner.nav.nav-tabs > li > a{
     border: 0;
     background-color: #262626; /* Old browsers */
   background-repeat: repeat-x; /* Repeat the gradient */
@@ -306,22 +306,22 @@
   color: #CCCCCC;
 }
 
-#fx-banner .navbar-inner.nav.nav-tabs > li > a:hover{
+#banner .navbar-inner.nav.nav-tabs > li > a:hover{
     color: #24D6FA;
 }
 
-#fx-banner .navbar-inner.nav.nav-tabs > li.active{
+#banner .navbar-inner.nav.nav-tabs > li.active{
     /*background: transparent url("../img/fc_hero_strip.png") -730px 122px; */
     background-color: #333333;
 }
 
-#fx-banner .navbar-inner.nav.nav-tabs > li.active a{
+#banner .navbar-inner.nav.nav-tabs > li.active a{
     color: #FFFFFF;
 }
 
-#fx-banner .navbar-inner.nav.nav-tabs li a span.caret{display: none;}
+#banner .navbar-inner.nav.nav-tabs li a span.caret{display: none;}
 
-#fx-banner .navbar-inner.nav.nav-tabs li.active > a span.caret{
+#banner .navbar-inner.nav.nav-tabs li.active > a span.caret{
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 6px solid #000000;
@@ -336,16 +336,16 @@
     left: -32px;
 }
 
-#fx-banner .tabbable .navbar-inner.nav.nav-tabs > a:hover{
+#banner .tabbable .navbar-inner.nav.nav-tabs > a:hover{
     color: #24D6FA;
 
 }
-#fx-banner .navbar-inner.nav.nav-tabs > a{
+#banner .navbar-inner.nav.nav-tabs > a{
     color: #CACACA;
     font-weight: normal;
 }
 
-#fx-banner .tabbable .tab-content .tab-pane.active .tab-item{
+#banner .tabbable .tab-content .tab-pane.active .tab-item{
     width: 248px;
     margin-top: -4px;
     float: left;
@@ -356,13 +356,13 @@
     border-radius: 0 0 0 5px;
 }
 
-#fx-banner .tabbable .tab-content .tab-pane .tab-item{
+#banner .tabbable .tab-content .tab-pane .tab-item{
    border-right: 1px solid #CCCCCC;
 }
-#fx-banner .tabbable .tab-content .tab-pane.active .tab-item:last-child{
+#banner .tabbable .tab-content .tab-pane.active .tab-item:last-child{
     border-right: 0px;
 }
-#fx-banner .tabbable .tab-content .tab-pane.active .tab-item.active:last-child{
+#banner .tabbable .tab-content .tab-pane.active .tab-item.active:last-child{
     -webkit-border-radius: 0 0 3px 0;
     -moz-border-radius: 0 0 3px 0;
     border-radius: 0 0 3px 0;
@@ -371,7 +371,7 @@
 
 }
 
-#fx-banner .tabbable .tab-content .tab-pane .tab-item img{
+#banner .tabbable .tab-content .tab-pane .tab-item img{
     border: 1px solid #CCCCCC;
     padding: 3px;
     background: #FFFFFF;
@@ -381,40 +381,36 @@
 }
 
 
-#fx-banner .tabbable .tab-content .tab-pane .tab-item .details{
+#banner .tabbable .tab-content .tab-pane .tab-item .details{
     float: left;
     padding-left: 8px;
 }
-#fx-banner .tabbable .tab-content .tab-pane .tab-item .details h3{
+#banner .tabbable .tab-content .tab-pane .tab-item .details h3{
     font-size: 15px;
     line-height: 16px;
 }
-#fx-banner .tabbable .tab-content .tab-pane .tab-item .details .title{
+#banner .tabbable .tab-content .tab-pane .tab-item .details .title{
     font-size: 12px;
     color: #333333;
 }
-#fx-banner .tabbable .tab-content .tab-pane .tab-item .details .price{
+#banner .tabbable .tab-content .tab-pane .tab-item .details .price{
     color: #e75d01;
     font-size: 14px;
     font-weight: bold;
 }
-#fx-banner .tabbable .tab-content .tab-pane .tab-item .details .offer_detail{
+#banner .tabbable .tab-content .tab-pane .tab-item .details .offer_detail{
     color: #666666;
     font-size: 10px;
 }
-#fx-banner .tabbable .tab-content .tab-pane.active .tab-item.active{
+#banner .tabbable .tab-content .tab-pane.active .tab-item.active{
     background: transparent url("../img/tab_active_bg.png") repeat-x;
     border-right: 1px solid #cccccc;
 }
 /*
-#fx-banner .tabbable .tab-content .tab-pane.active div#heroCarousel1 .carousel-inner .item.left{
+#banner .tabbable .tab-content .tab-pane.active div#heroCarousel1 .carousel-inner .item.left{
     display: none;
 }
 */
-#fx-banner .tabbable .tab-content .tab-pane .item{
+#banner .tabbable .tab-content .tab-pane .item{
     display: inline-block;
 }
-
-
-
-

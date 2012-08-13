@@ -9,11 +9,11 @@
 
         <!-- Le styles -->
         <link href="../assets/css/bootstrap.css" rel="stylesheet">
-        
-        <link href="../assets/css/srp.css" rel="stylesheet">
-        <link href="../assets/css/internal_layout.css" rel="stylesheet">
-        <link href="../assets/css/global.css" rel="stylesheet">
         <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="../assets/css/srp.css" rel="stylesheet">
+        <link href="../assets/css/checkout.css" rel="stylesheet">
+        <link href="../assets/css/wishlist.css" rel="stylesheet">
+        <link href="../assets/css/global.css" rel="stylesheet">
         
 
         <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
@@ -31,12 +31,14 @@
     
     <body>
     	<!-- Header Begins--->
-        <div class="navbar fx-header"> <!-- NAVBAR Begins -->
-            <div class="fx-navbar-inner"> <!-- NAVBAR-INNER Begins -->
-                <div class="fx-container">  <!-- CONTAINER Begins -->
-                    <a href="../index.html" class="brand"><img src="../assets/img/fc_logo.png" /></a>
-                    <ul class="nav fx-primary-nav"> <!-- FX-PRIMARY-NAV Begins -->
-                        <li class="dropdown">
+
+        <div class="navbar header"> <!-- NAVBAR Begins -->
+            <div class="navbar-inner"> <!-- NAVBAR-INNER Begins -->
+                <div class="navbar-container">  <!-- NAVBAR CONTAINER Begins -->
+                
+                    <a href="#" class="brand logo">Fox Connect</a>
+                    <ul class="nav primary-nav"> <!-- PRIMARY-NAV Begins -->
+                    	<li class="dropdown">
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">Movies<b class="caret"></b></a>
                             <div class="dropdown-menu">
                                 <ul class="pull-left">
@@ -94,23 +96,21 @@
                                     <li><a href="#">James Bond (13)</a></li>
                                 </ul>
 
-                                <ul class="pull-left fx-poular-trends">
-                                    <li class="nav-header"><img src="../assets/img/graph.png" /><span class="black bold">Popular</span> <span>Trends</span></li>
+                                <ul class="pull-left popular-trends">
+                                    <li class="nav-header"><span class="bold-title">Popular</span> <span>Trends</span></li>
                                     <li class="divider"></li>
-                                    <li><a href="#"><span class="small_title">Top Genre</span><br>Romantic Comedy</a></li>
+                                    <li><a href="#"><span class="small-title">Top Genre</span>Romantic Comedy</a></li>
                                     <li class="divider-dot"></li>
-                                    <li><a href="#"><span class="small_title">Top Decade</span><br>2010s</a></li>
+                                    <li><a href="#"><span class="small-title">Top Decade</span>2010s</a></li>
                                     <li class="divider-dot"></li>
-                                    <li><a href="#"><span class="small_title">Top Rating</span><br>PG-13</a></li>
+                                    <li><a href="#"><span class="small-title">Top Rating</span>PG-13</a></li>
                                     <li class="divider-dot"></li>
-                                    <li><a href="#"><span class="small_title">Top Movie</span><br>StarWars: The Empire Strlkes Back</a></li>
+                                    <li><a href="#"><span class="small-title">Top Movie</span>StarWars: The Empire Strlkes Back</a></li>
                                     <li class="divider-dot"></li>
-                                    <li><a href="#"><span class="small_title">In San Jose, CA</span><br>Chronicle</a></li>
+                                    <li><a href="#"><span class="small-title">In San Jose, CA</span>Chronicle</a></li>
                                     <li class="divider-dot"></li>
-                                    <li><a href="#"><span class="small_title">Newest Release</span><br>The Killing</a></li>
+                                    <li><a href="#"><span class="small-title">Newest Release</span>The Killing</a></li>
                                 </ul>
-
-
                             </div>
                         </li>
                         <li class="dropdown">
@@ -128,16 +128,16 @@
                         </li>
 
                         <li><a href="#">My Media</a></li>
-                    </ul> <!-- FX-PRIMARY-NAV ENDs -->
-                    <a href="#" class="fx-icon-cart brand">0</a>
-                    <a href="#" class="fx-icon-fav brand">0</a>
-
-                    <div class="fx-navbar-secondary">
-                        <span><a href="#" class="pull-right">Help</a></span>
-                        <div id="user-info" class="btn-group pull-right">
-                            <a href="#" data-toggle="dropdown" class="fx-btn btn dropdown-toggle">
+                    </ul>
+                    <a href="#" class="icon-cart brand">0</a>
+                    <a href="#" class="icon-fav brand">0</a>
+                    
+                    <div class="navbar-secondary pull-right">
+                    	<a href="#" class="help pull-right">Help</a></span>
+                        <div class="btn-group pull-right user-info clearfix">
+                            <a href="#" data-toggle="dropdown" class="btn dropdown-toggle">
                                 <span class="greet">Hello,</span> Thomas!
-                                <span class="caret fx-caret"></span>
+                                <span class="caret caret"></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a href="#">Profile</a></li>
@@ -145,53 +145,51 @@
                                 <li><a href="#">Sign Out</a></li>
                             </ul>
                         </div>
-
-                        <form id="SearchForm" class="navbar-search pull-right" action="index.html">
-                            <div class="btn-group" id="fx-select-category">
-                                <button class="btn fx-btn">Movies</button>
+                        
+                        <div class="clearfix"></div>
+                        <form id="SearchForm" class="navbar-search pull-right" action="search-results/index.html">
+                            <div class="btn-group select-category">
+                                <button class="btn btn">Movies</button>
                                 <button data-toggle="dropdown" class="btn dropdown-toggle">
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <!-- dropdown menu links -->
                                     <li><a href="#">TV</a></li>
                                     <li><a href="#">Videos</a></li>
                                 </ul>
                             </div>
-                           <input type="submit" id="search_btn" value="">
-                          <input type="text" class="search-query" placeholder="Title, Director, Genre, or Year">
+
+                            <input type="submit" class="search-button" value="">
+                            <input type="text" class="search-query" placeholder="Title, Director, Genre, or Year">
                         </form>
 
                     </div>
-                </div>  <!-- CONTAINER ENDs -->
+                    
+                </div>  <!-- NAVBAR CONTAINER ENDs -->
             </div> <!-- NAVBAR-INNER ENDs -->
         </div> <!-- NAVBAR ENDs --> <!-- Header ENDs--->
         
         
-
-        <div class="fx-body-container"> <!-- BODY CONTAINER -->
-            <div class="fx-content"> <!-- FX CONTENT -->
-            
-                <div id="fx_content_conatiner" class="clearfix">    	
+        
+        <div class="body-container"> <!-- BODY CONTAINER -->
+            <div class="content"> <!-- CONTENT -->
+            	
+                <div class="content-conatiner clearfix">
                 
-                    <div id="fx_result_strip">
-                		<div id="fx_result_content">
+                	<div class="search-header">
 						<ul class="unstyled">
-                        	<li class="pull-right back_to_home"><i class="fx-icon-back"></i><a href="../index.html">Back to Home</a></li>
+                        	<li class="pull-right back-to-home"><i class="icon-back"></i><a href="../index.html">Back to Home</a></li>
                             <li class="pull-left no">372</li>
                             <li class="title">Movies and Television<br>
                             	<small>Results Found</small>
                             </li>
                         </ul>
-                		</div>
                 	</div>
-                    
-                    
-                    <div id="nav_after_result">
+                    <div class="search-nav">
                         <ul>
                             <li class="dropdown parent">
-                                <span class="small_title">Media Type</span>
-                                <a href="#" class="dropdown-toggle big_title" data-toggle="dropdown" >Movies and Television</a>
+                                <span class="small-title">Media Type</span>
+                                <a href="#" class="dropdown-toggle big-title" data-toggle="dropdown" >Movies and Television</a>
                                 <span class="caret"></span>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Submenu</a></li>
@@ -199,8 +197,8 @@
                             </li>
                             
                             <li class="dropdown parent">
-                                <span class="small_title">Genre</span>
-                                <a href="#" class="dropdown-toggle big_title" data-toggle="dropdown" >SciFi</a>
+                                <span class="small-title">Genre</span>
+                                <a href="#" class="dropdown-toggle big-title" data-toggle="dropdown" >SciFi</a>
                                 <span class="caret"></span>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Submenu</a></li>
@@ -208,8 +206,8 @@
                             </li>
                             
                             <li class="dropdown parent">
-                                <span class="small_title">Decade</span>
-                                <a href="#" class="dropdown-toggle big_title" data-toggle="dropdown" >Any Decade</a>
+                                <span class="small-title">Decade</span>
+                                <a href="#" class="dropdown-toggle big-title" data-toggle="dropdown" >Any Decade</a>
                                 <span class="caret"></span>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Submenu</a></li>
@@ -217,8 +215,8 @@
                             </li>
                             
                             <li class="dropdown parent">
-                                <span class="small_title">Rating</span>
-                                <a href="#" class="dropdown-toggle big_title" data-toggle="dropdown" >MPAA: PG-13</a>
+                                <span class="small-title">Rating</span>
+                                <a href="#" class="dropdown-toggle big-title" data-toggle="dropdown" >MPAA: PG-13</a>
                                 <span class="caret"></span>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Submenu</a></li>
@@ -226,26 +224,24 @@
                             </li>
                             
                             <li class="parent">
-                                <span class="small_title">Format</span>
+                                <span class="small-title">Format</span>
                                 <form>
-                                    <label class="checkbox inline big_title"><input type="checkbox" class="btn">Blu-ray</label>
-                                    <label class="checkbox inline big_title"><input type="checkbox">Standard DVD</label>
-                                    <label class="checkbox inline big_title"><input type="checkbox">Digital Download</label>
+                                    <label class="checkbox inline big-title blu-ray"><input type="checkbox">Blu-ray</label>
+                                    <label class="checkbox inline big-title standard-dvd"><input type="checkbox">Standard DVD</label>
+                                    <label class="checkbox inline big-title digital-dwn"><input type="checkbox">Digital Download</label>
                                 </form>   
                             </li>
                       </ul>
                     </div>
                     
-                    <div style="clear:both;"></div>
+                    <div class="inner-content"> <!-- Start inner content -->
                     
-
-                    	
-                        <div id="content_left">
-                        	<div id="search_view_control"> <!-- Search view control begins -->
-                            
+                    	<div class="primary-content"> <!-- Start Primary Content -->
+                        
+                        	<div class="search-view-control"> <!-- Search view control begins -->    
                                 <div class="pagination">
                                 <ul>
-                                <li><a href="#"><i class="fx-icon-arrow-left"></i></a></li>
+                                <li><a href="#"><i class="icon-arrow-left"></i></a></li>
                                 <li><a href="#">Prev</a></li>
                                 <li class="active"><a href="#">1</a></li>
                                 <li class="separator">|</li>
@@ -255,837 +251,91 @@
                                 <li><a href="#">4</a></li>
                                 <li class="separator">|</li>
                                 <li> <a href="#">Next</a></li>
-                                <li> <a href="#"><i class="fx-icon-arrow-right"></i></a></li>
+                                <li> <a href="#"><i class="icon-arrow-right"></i></a></li>
                                 </ul>
                                 </div>
                                 
-                                <div class="btn_group_search">
-                                	
-                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <span class="title_normal">Genre:</span> SciFi <b class="caret"></b> </a>
+                                <div class="btn-group-search">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle"> <span class="title-normal">Genre:</span> SciFi <b class="caret"></b> </a>
                                     <ul class="dropdown-menu">
                                     <li><a href="#buttonGroups">Button groups</a></li>
                                     <li><a href="#buttonDropdowns">Button dropdowns</a></li>
                                     </ul>
                                 </div>
-                                
-                                <div id="view_btns">
-                                	<a href="#" class="thumbnail_view"><i class="fx-icon-thumbnail"></i>Gallery View</a>
-                                    <a href="#" class="thumbnail_view"><i class="fx-icon-list"></i>List View</a>
-                                </div>
-                                
                             </div> <!-- Search view control-->
                             
-                            <div id="thumbnail_container">
-                            	<div id="thumbnail_box" >
-                                	<span class="wishlist_element"></span>
+                            <div class="thumbnail-container">
+                            
+                            	<div class="purchase-popup">
+                                
+                                    <div class="purchase-popup-container"> 
+                                        <img src="../assets/img/close.png"  class="close" id="close-popup"/>
+                                        <div class="purchase-popup-content">
+                                            <div class="heading">
+                                                <h2>Breakout Kings</h2>
+                                                <span class="small">Season 1</span>
+                                            </div>
+                                            
+                                            <div class="wish-list-row">
+                                                <span class="year">2011</span>
+                                                <span class="separate">|</span>
+                                                <span class="nr">NR</span>
+                                                <span class="not-rated">(Not Rated)</span>
+                                                <span class="pull-right">
+                                                	<i class="icon-star2"></i>
+                                                	<a href="#" class="add-to-wishlish">Add to Wish List</a>
+                                                </span>
+                                            </div>
+                                            
+                                            <div class="popup-row">
+                                                <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
+                                                <i class="icon-movie"></i>
+                                                <span class="big-price">$9.99</span><br>
+                                                <small class="save">(Save 30% over retail)</small>
+                                            </div>
+                                            
+                                            <!--<div class="popup-row">
+                                                <a href="#" class="buy-3d-btn">Buy DVD</a>
+                                                <i class="icon-3d"></i>
+                                                <span class="normal-price">$9.99</span><br>
+                                                <small class="save">(Save 30% over retail)</small>
+                                            </div>-->
+                                            
+                                            <div class="popup-row">
+                                                <a href="#" class="buy-dvd-btn">Buy DVD</a>
+                                                <i class="icon-tv"></i>
+                                                <span class="normal-price">$9.99</span><br>
+                                                <small class="save">(Save 30% over retail)</small>
+                                            </div>
+                                            
+                                            <div class="popup-row last-row">
+                                                <a href="#" class="download-btn">Download</a>
+                                                <i class="icon-download"></i>
+                                                <span class="small-price">$9.99</span><br>
+                                                <small class="save">(Save 30% over retail)</small>
+                                            </div>
+                                            <a href="#" class="view-more"><i class="icon-more-details"></i>View more Details</a>
+                                        </div>
+                                   </div>
+                                </div>
+                                    
+               	  				<div class="thumbnail-box" >
+                                	<span class="wishlist-element"></span>
                                 	<img src="../assets/img/movie_titles/01.Behind Enemy Lines.jpg" id="pr1" />
                                     <br />
-                                    <span>Behind Enemy Lines</span><br/>
-                                    <i class="fx-icon-movie orange">$19.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr1">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr1_popup">
-                                        	
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                           		<!--<img src="../assets/img/close.png"  id="close"/>-->
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
+                                    <span class="movie-title">Behind Enemy Lines</span><br/>
+                                    <i class="icon-movie"></i>
+                                    <span class="price">$19.99</span>
+                                    <span class="separator">|</span>
+                                    <span class="link pull-right" id="pr1">Purchase</span>
+                                </div>
                                 
-                                
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/02.jpg" id="pr2" />
-                                    <br />
-                                    <span>The Killing, S1</span><br/>
-                                    <i class="fx-icon-tv orange">$31.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr2">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr2_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/03.jpg" id="pr3" />
-                                    <br />
-                                    <span>Breakout Kings, S1</span><br/>
-                                    <i class="fx-icon-movie orange">$25.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr3">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr3_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/04.jpg" id="pr4" />
-                                    <br />
-                                    <span>Machine Gun Preacher</span><br/>
-                                    <i class="fx-icon-movie orange">$25.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr4">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr4_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/05.jpg" id="pr5" />
-                                    <br />
-                                    <span>Bob’s Burgers, S1</span><br/>
-                                    <i class="fx-icon-tv orange">$18.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr5">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr5_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/06.jpg" id="pr6" />
-                                    <br />
-                                    <span>Fantastic 4</span><br/>
-                                    <i class="fx-icon-movie orange">$9.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr6">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr6_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/07.jpg" id="pr7" />
-                                    <br />
-                                    <span>Babylon A.D.</span><br/>
-                                    <i class="fx-icon-movie orange">$5.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr7">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr7_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/08.jpg" id="pr8" />
-                                    <br />
-                                    <span>Firefly</span><br/>
-                                    <i class="fx-icon-tv orange">$39.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr8">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr8_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/09.jpg" id="pr9" />
-                                    <br />
-                                    <span>Alien vs. Predator</span><br/>
-                                    <i class="fx-icon-movie orange">$9.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr9">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr9_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/10.jpg" id="pr10" />
-                                    <br />
-                                    <span>Buffy the Vampire Slay</span><br/>
-                                    <i class="fx-icon-tv orange">$31.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr10">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr10_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/11.jpg"  id="pr11"/>
-                                    <br />
-                                    <span>Fantastic 4</span><br/>
-                                    <i class="fx-icon-movie orange">$31.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr11">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr11_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/12.jpg" id="pr12" />
-                                    <br />
-                                    <span>Babylon A.D.</span><br/>
-                                    <i class="fx-icon-movie orange">$31.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr12">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr12_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/01.Behind Enemy Lines.jpg" id="pr13" />
-                                    <br />
-                                    <span>Behind Enemy Lines</span><br/>
-                                    <i class="fx-icon-movie orange">$19.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr13">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr13_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/02.jpg" id="pr14" />
-                                    <br />
-                                    <span>The Killing, S1</span><br/>
-                                    <i class="fx-icon-movie orange">$31.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr14">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr14_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/03.jpg" id="pr15" />
-                                    <br />
-                                    <span>Breakout Kings, S1</span><br/>
-                                    <i class="fx-icon-movie orange">$25.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr15">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr15_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/04.jpg" id="pr16" />
-                                    <br />
-                                    <span>Machine Gun Preacher</span><br/>
-                                    <i class="fx-icon-movie orange">$25.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr16">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr16_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/05.jpg" id="pr17" />
-                                    <br />
-                                    <span>Bob’s Burgers, S1</span><br/>
-                                    <i class="fx-icon-movie orange">$18.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr17">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr17_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/06.jpg" id="pr18" />
-                                    <br />
-                                    <span>Fantastic 4</span><br/>
-                                    <i class="fx-icon-movie orange">$9.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr18">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr18_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/07.jpg" id="pr19" />
-                                    <br />
-                                    <span>Babylon A.D.</span><br/>
-                                    <i class="fx-icon-movie orange">$5.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr19">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr19_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                <div id="thumbnail_box">
-                                	<img src="../assets/img/movie_titles/08.jpg" id="pr20" />
-                                    <br />
-                                    <span>Firefly</span><br/>
-                                    <i class="fx-icon-movie orange">$39.99</i>
-                                    <span class="sep">|</span>
-                                    <span class="link" id="pr20">Purchase</span>
-                                    
-                                    <div class="purchase_popup" id="pr20_popup">
-                                        
-                                            <div id="purchase_popup_container">
-                                           		<img src="../assets/img/close.png"  id="close"/>
-                                                <div id="purchase_popup_content">
-                                                    <div class="heading">
-                                                        <h2>Breakout Kings</h2>
-                                                        <span class="small">Season 1</span>                                                    </div>
-                                                    <div class="wish_list_row">
-                                                        <span>2011</span>
-                                                        <span><strong>NR</strong> (Not Rated)</span>
-                                                        <span class="pull-right"><i class="fx-icon-star2"></i>Add to Wish List</span>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-bluray-btn">Buy Blu-ray</a>
-                                                        <i class="fx-icon-movie orange big_price">$9.99</i><br>
-                                                        <small>(Save 30% over retail)</small>                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="buy-dvd-btn">Buy DVD</a>
-                                                        <i class="fx-icon-tv orange normal_price">$9.99</i><br>
-                                                    </div>
-                                                    
-                                                    <div class="popup_row">
-                                                        <a href="#" class="download-btn">Download</a>
-                                                        <i class="fx-icon-tv orange small_price">$9.99</i><br>
-                                                    </div>
-                                                    <i class="fx-icon-arrow-right"></i><a href="#">View more Details</a>                                                </div>
-                                           </div>
-                                    </div>
-                              </div>
-                                
-                                
-                                
-                                <div id="bottom_pagination"> <!-- bottom Pagination begins -->
-                                	<div class="pagination">
+                            </div>
+                            
+                            <div class="bottom-pagination"> <!-- bottom Pagination begins -->
+                                <div class="pagination">
                                 <ul>
-                                <li><a href="#"><i class="fx-icon-arrow-left"></i></a></li>
+                                <li><a href="#"><i class="icon-arrow-left"></i></a></li>
                                 <li><a href="#">Prev</a></li>
                                 <li class="active"><a href="#">1</a></li>
                                 <li class="separator">|</li>
@@ -1095,22 +345,20 @@
                                 <li><a href="#">4</a></li>
                                 <li class="separator">|</li>
                                 <li> <a href="#">Next</a></li>
-                                <li> <a href="#"><i class="fx-icon-arrow-right"></i></a></li>
+                                <li> <a href="#"><i class="icon-arrow-right"></i></a></li>
                                 </ul>
                                 </div>
-                            	</div> <!-- bottom Pagination -->
-                                
-                                <div style="clear:both;"></div>
-                                
-                                <div id="fx-new-releases" class="fx-title-header margin-left">
+                            </div> <!-- bottom Pagination -->
+                            
+                            <div style="clear:both"></div>
+                            
+                            <div id="new-releases" class="title-header">
                                     <ul class="nav nav-pills">
                                         <li class="title-text">You Might Also Like</li>
                                         <li class=""><a href="#alerts">Show me more...</a> </li>
                                     </ul>
-                
                                     <!-- Pagination -->
-                
-                                    <div class="pagination" style="left:0;">
+                                    <div class="pagination">
                                         <ul>
                                             <li>
                                                 <a class="nav-btn current"></a>
@@ -1121,429 +369,412 @@
                                         </ul>
                                     </div>
                                     <!-- Pagination Ends -->
-                                    
-                                    <a class="btn fx-right_sl" href="#myCarousel1" data-slide="next"><b class="caret"></b></a>
-                                    <a class="btn fx-left_sl" href="#myCarousel1" data-slide="prev"><b class="caret"></b></a>
+                                    <a class="btn right-srp" href="#myCarousel1" data-slide="next"><b class="caret"></b></a>
+                                    <a class="btn left-srp" href="#myCarousel1" data-slide="prev"><b class="caret"></b></a>
+                            </div>
+                            
+                            <!-- myCarousel -->
+                            <div id="myCarousel1" class="carousel slide">
+                            	<div class="view-all">
+                                    <div class="text">View All</div>
+                                    <div class="no">64</div>
+                                    <div class="text" wrap="wrap">New Releases</div>
                                 </div>
                                 
-                                <div style="clear:both;"></div>
-                                
-                                
-                                <!-- myCarousel -->
-                                <div id="myCarousel1" class="carousel slide">
-                                
-                                	<div class="view_all_search">
-                                        <div class="text">View All</div>
-                                        <div class="no">64</div>
-                                        <div class="text" wrap="wrap">New Releases</div>
-                                    </div>
-                                    
-                                    <!-- Carousel items -->
-                                    <div class="carousel-inner inner_width" >
-                                    
-                                        <!---- 1 ----->
-                                        <div class="active item">
-                                            <div>
-                                                <img src="../assets/img/movie_titles/movie_pic.png" />
-                                                <br />
-                                                <span>Behind Enemy Lines</span><br/>
-                                                <i class="fx-icon-movie orange">$19.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                               <img src="../assets/img/movie_titles/02.jpg" />
-                                                <br />
-                                                <span>The Killing, S1</span><br/>
-                                                <i class="fx-icon-tv orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <img src="../assets/img/movie_titles/03.jpg" />
-                                                <br />
-                                                <span>Breakout Kings, S1</span><br/>
-                                                <i class="fx-icon-movie orange">$25.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        <!---- 2 ----->
-                                        <div class="item">
-                                            <div>
-                                            <img src="../assets/img/movie_titles/05.jpg" />
+                                <div class="carousel-inner srp-width" > <!-- Start Inner Carousel -->
+                                    <div class="active item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/movie_pic.png" />
                                             <br />
-                                            <span>Bob’s Burgers, S1</span><br/>
-                                            <i class="fx-icon-movie orange">$18.99</i>
-                                            <span class="sep">|</span>
+                                            <span class="movie-title">Behind Enemy Lines</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$19.99</span>
+                                            <span class="separator">|</span>
                                             <span>
                                                 <a href="#" class="dotted-underline">Purchase</a>
                                             </span>
                                         </div>
-                                        
+                                        <div>
+                                           <img src="../assets/img/movie_titles/02.jpg" />
+                                            <br />
+                                            <span class="movie-title">The Killing, S1</span><br/>
+                                            <i class="icon-tv"></i>
+                                            <span class="price">$31.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <img src="../assets/img/movie_titles/03.jpg" />
+                                            <br />
+                                            <span class="movie-title">Breakout Kings, S1</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$25.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/05.jpg" />
+                                            <br />
+                                            <span class="movie-title">Bob’s Burgers, S1</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$18.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                    
                                         <div>
                                             <img src="../assets/img/movie_titles/06.jpg" />
                                             <br />
-                                            <span>Fantastic 4</span><br/>
-                                            <i class="fx-icon-movie orange">$9.99</i>
-                                            <span class="sep">|</span>
+                                            <span class="movie-title">Fantastic 4</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$9.99</span>
+                                            <span class="separator">|</span>
                                             <span>
                                                 <a href="#" class="dotted-underline">Purchase</a>
                                             </span>
                                         </div>
-                                        
+                                    
                                         <div>
                                             <img src="../assets/img/movie_titles/07.jpg" />
                                             <br />
-                                            <span>Babylon A.D.</span><br/>
-                                            <i class="fx-icon-movie orange">$5.99</i>
-                                            <span class="sep">|</span>
+                                            <span class="movie-title">Babylon A.D.</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$5.99</span>
+                                            <span class="separator">|</span>
                                             <span>
                                                 <a href="#" class="dotted-underline">Purchase</a>
                                             </span>
                                         </div>
-                                            
-                                        </div>
-                
-                                        <!---- 3 ----->
-                                        <div class="item">
-                                            <div>
-                                                <img src="../assets/img/movie_titles/09.jpg" />
-                                                <br />
-                                                <span>Alien vs. Predator</span><br/>
-                                                <i class="fx-icon-movie orange">$9.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                            <div>
-                                                <img src="../assets/img/movie_titles/10.jpg" />
-                                                <br />
-                                                <span>Buffy the Vampire Slay</span><br/>
-                                                <i class="fx-icon-tv orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                            <div>
-                                                <img src="../assets/img/movie_titles/11.jpg" />
-                                                <br />
-                                                <span>Fantastic 4</span><br/>
-                                                <i class="fx-icon-movie orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>                                            
-                                        </div>
-                
-                                        <!---- 4 ----->
-                                        <div class="item">
-                                            <div>
-                                                <img src="../assets/img/movie_titles/movie_pic.png" />
-                                                <br />
-                                                <span>Behind Enemy Lines</span><br/>
-                                                <i class="fx-icon-movie orange">$19.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                               <img src="../assets/img/movie_titles/02.jpg" />
-                                                <br />
-                                                <span>The Killing, S1</span><br/>
-                                                <i class="fx-icon-tv orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <img src="../assets/img/movie_titles/03.jpg" />
-                                                <br />
-                                                <span>Breakout Kings, S1</span><br/>
-                                                <i class="fx-icon-movie orange">$25.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                        </div>
-                                    </div> <!-- Carousel items ENDs-->
-                					
-                                </div> <!-- myCarousel1 ENDs -->
-                                
-                                
-                                <div style="clear:both;"></div>
-                                
-                                <a href="#" name="popular"></a>
-                                <div id="fx-popular" class="fx-title-header margin-left">
-                                    <ul class="nav nav-pills">
-                                        <li class="title-text">Popular</li>
-                                        <li class=""><a href="#alerts">Show me more...</a> </li>
-                                    </ul>
-                
-                                    <!-- Pagination -->
-                
-                                    <div class="pagination" style="left:0;">
-                                        <ul>
-                                            <li>
-                                                <a class="nav-btn current"></a>
-                                            </li>
-                                            <li><a href="#popular" class="nav-btn"></a></li>
-                                            <li><a href="#popular" class="nav-btn"></a></li>
-                                            <li><a href="#popular" class="nav-btn"></a></li>
-                                        </ul>
                                     </div>
-                                    <!-- Pagination Ends -->
-                                    
-                                    <a class="btn fx-right_sl" href="#myCarousel2" data-slide="next"><b class="caret"></b></a>
-                                    <a class="btn fx-left_sl" href="#myCarousel2" data-slide="prev"><b class="caret"></b></a>
-                                </div>
-                                
-                                <div style="clear:both;"></div>
-                                
-                                
-                                <!-- myCarousel2 -->
-                                <div id="myCarousel2" class="carousel slide">
-                                
-                                	<div class="view_all_search">
-                                        <div class="text">View All</div>
-                                        <div class="no">64</div>
-                                        <div class="text" wrap="wrap">New Releases</div>
-                                    </div>
-                                    
-                                    <!-- Carousel items -->
-                                    <div class="carousel-inner inner_width" >
-                                    
-                                        <!---- 1 ----->
-                                        <div class="active item">
-                                            <div>
-                                                <img src="../assets/img/movie_titles/movie_pic.png" />
-                                                <br />
-                                                <span>Behind Enemy Lines</span><br/>
-                                                <i class="fx-icon-movie orange">$19.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                               <img src="../assets/img/movie_titles/02.jpg" />
-                                                <br />
-                                                <span>The Killing, S1</span><br/>
-                                                <i class="fx-icon-tv orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <img src="../assets/img/movie_titles/03.jpg" />
-                                                <br />
-                                                <span>Breakout Kings, S1</span><br/>
-                                                <i class="fx-icon-movie orange">$25.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                            
-                                        </div>
-                                        <!---- 2 ----->
-                                        <div class="item">
-                                            <div>
-                                            <img src="../assets/img/movie_titles/05.jpg" />
+            
+                                    <div class="item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/09.jpg" />
                                             <br />
-                                            <span>Bob’s Burgers, S1</span><br/>
-                                            <i class="fx-icon-movie orange">$18.99</i>
-                                            <span class="sep">|</span>
+                                            <span class="movie-title">Alien vs. Predator</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$9.99</span>
+                                            <span class="separator">|</span>
                                             <span>
                                                 <a href="#" class="dotted-underline">Purchase</a>
                                             </span>
                                         </div>
                                         
                                         <div>
-                                            <img src="../assets/img/movie_titles/06.jpg" />
+                                            <img src="../assets/img/movie_titles/10.jpg" />
                                             <br />
-                                            <span>Fantastic 4</span><br/>
-                                            <i class="fx-icon-movie orange">$9.99</i>
-                                            <span class="sep">|</span>
+                                            <span class="movie-title">Buffy the Vampire Slay</span><br/>
+                                            <i class="icon-tv"></i>
+                                            <span class="price">$31.99</span>
+                                            <span class="separator">|</span>
                                             <span>
                                                 <a href="#" class="dotted-underline">Purchase</a>
                                             </span>
                                         </div>
                                         
                                         <div>
-                                            <img src="../assets/img/movie_titles/07.jpg" />
+                                            <img src="../assets/img/movie_titles/11.jpg" />
                                             <br />
-                                            <span>Babylon A.D.</span><br/>
-                                            <i class="fx-icon-movie orange">$5.99</i>
-                                            <span class="sep">|</span>
+                                            <span class="movie-title">Fantastic 4</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$31.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>                                            
+                                    </div>
+            
+                                    <div class="item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/movie_pic.png" />
+                                            <br />
+                                            <span class="movie-title">Behind Enemy Lines</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$19.99</span>
+                                            <span class="separator">|</span>
                                             <span>
                                                 <a href="#" class="dotted-underline">Purchase</a>
                                             </span>
                                         </div>
-                                            
+                                        <div>
+                                           <img src="../assets/img/movie_titles/02.jpg" />
+                                            <br />
+                                            <span class="movie-title">The Killing, S1</span><br/>
+                                            <i class="icon-tv">$31.99</i>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
                                         </div>
-                
-                                        <!---- 3 ----->
-                                        <div class="item">
-                                            <div>
-                                                <img src="../assets/img/movie_titles/09.jpg" />
-                                                <br />
-                                                <span>Alien vs. Predator</span><br/>
-                                                <i class="fx-icon-movie orange">$9.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                            <div>
-                                                <img src="../assets/img/movie_titles/10.jpg" />
-                                                <br />
-                                                <span>Buffy the Vampire Slay</span><br/>
-                                                <i class="fx-icon-tv orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                            <div>
-                                                <img src="../assets/img/movie_titles/11.jpg" />
-                                                <br />
-                                                <span>Fantastic 4</span><br/>
-                                                <i class="fx-icon-movie orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>                                            
+                                        <div>
+                                            <img src="../assets/img/movie_titles/03.jpg" />
+                                            <br />
+                                            <span class="movie-title">Breakout Kings, S1</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$25.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
                                         </div>
-                
-                                        <!---- 4 ----->
-                                        <div class="item">
-                                            <div>
-                                                <img src="../assets/img/movie_titles/movie_pic.png" />
-                                                <br />
-                                                <span>Behind Enemy Lines</span><br/>
-                                                <i class="fx-icon-movie orange">$19.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                               <img src="../assets/img/movie_titles/02.jpg" />
-                                                <br />
-                                                <span>The Killing, S1</span><br/>
-                                                <i class="fx-icon-tv orange">$31.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            <div>
-                                                <img src="../assets/img/movie_titles/03.jpg" />
-                                                <br />
-                                                <span>Breakout Kings, S1</span><br/>
-                                                <i class="fx-icon-movie orange">$25.99</i>
-                                                <span class="sep">|</span>
-                                                <span>
-                                                    <a href="#" class="dotted-underline">Purchase</a>
-                                                </span>
-                                            </div>
-                                            
-                                        </div>
-                                    </div> <!-- Carouse2 items ENDs-->
-                					
-                                </div> <!-- myCarousel2 ENDs -->
-
-                                
-                                
-                                
+                                    </div>
+                                </div><!-- End Inner Carousel -->
                             </div>
                             
                             
+                            <a href="#" name="popular"></a>
+                            <div id="popular" class="title-header">
+                                <ul class="nav nav-pills">
+                                    <li class="title-text">Popular</li>
+                                    <li class=""><a href="#alerts">Show me more...</a> </li>
+                                </ul>
+            
+                                <!-- Pagination -->
+                                <div class="pagination">
+                                    <ul>
+                                        <li>
+                                            <a class="nav-btn current"></a>
+                                        </li>
+                                        <li><a href="#popular" class="nav-btn"></a></li>
+                                        <li><a href="#popular" class="nav-btn"></a></li>
+                                        <li><a href="#popular" class="nav-btn"></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Pagination Ends -->
+                                
+                                <a class="btn right-srp" href="#myCarousel2" data-slide="next"><b class="caret"></b></a>
+                                <a class="btn left-srp" href="#myCarousel2" data-slide="prev"><b class="caret"></b></a>
+                            </div>
+                            
+                            <!-- myCarousel2 -->
+                                <div id="myCarousel2" class="carousel slide">
+                                
+                                	<div class="view-all">
+                                        <div class="text">View All</div>
+                                        <div class="no">64</div>
+                                        <div class="text" wrap="wrap">New Releases</div>
+                                    </div>
+                                    
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner srp-width" >
+                                        <div class="active item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/movie_pic.png" />
+                                            <br />
+                                            <span class="movie-title">Behind Enemy Lines</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$19.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                        <div>
+                                           <img src="../assets/img/movie_titles/02.jpg" />
+                                            <br />
+                                            <span class="movie-title">The Killing, S1</span><br/>
+                                            <i class="icon-tv"></i>
+                                            <span class="price">$31.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <img src="../assets/img/movie_titles/03.jpg" />
+                                            <br />
+                                            <span class="movie-title">Breakout Kings, S1</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$25.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/05.jpg" />
+                                            <br />
+                                            <span class="movie-title">Bob’s Burgers, S1</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$18.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                    
+                                        <div>
+                                            <img src="../assets/img/movie_titles/06.jpg" />
+                                            <br />
+                                            <span class="movie-title">Fantastic 4</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$9.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                    
+                                        <div>
+                                            <img src="../assets/img/movie_titles/07.jpg" />
+                                            <br />
+                                            <span class="movie-title">Babylon A.D.</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$5.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                    </div>
+            
+                                    <div class="item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/09.jpg" />
+                                            <br />
+                                            <span class="movie-title">Alien vs. Predator</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$9.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                        
+                                        <div>
+                                            <img src="../assets/img/movie_titles/10.jpg" />
+                                            <br />
+                                            <span class="movie-title">Buffy the Vampire Slay</span><br/>
+                                            <i class="icon-tv"></i>
+                                            <span class="price">$31.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                        
+                                        <div>
+                                            <img src="../assets/img/movie_titles/11.jpg" />
+                                            <br />
+                                            <span class="movie-title">Fantastic 4</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$31.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>                                            
+                                    </div>
+            
+                                    <div class="item">
+                                        <div>
+                                            <img src="../assets/img/movie_titles/movie_pic.png" />
+                                            <br />
+                                            <span class="movie-title">Behind Enemy Lines</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$19.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                        <div>
+                                           <img src="../assets/img/movie_titles/02.jpg" />
+                                            <br />
+                                            <span class="movie-title">The Killing, S1</span><br/>
+                                            <i class="icon-tv">$31.99</i>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                        <div>
+                                            <img src="../assets/img/movie_titles/03.jpg" />
+                                            <br />
+                                            <span class="movie-title">Breakout Kings, S1</span><br/>
+                                            <i class="icon-movie"></i>
+                                            <span class="price">$25.99</span>
+                                            <span class="separator">|</span>
+                                            <span>
+                                                <a href="#" class="dotted-underline">Purchase</a>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    </div> <!-- Carouse2 items ENDs-->
+                					
+                                </div> <!-- myCarousel2 ENDs -->
                             
                             
-                        </div>
+                        </div><!-- End Primary Content -->
                         
-                        <div id="content_right">
+                        <div class="secondary-content"> <!-- Start Primary Content -->
                         
-                        	<div id="s_cart_wr"> <!-- Shopping Cart Begins -->
-                            	<div class="title_bar">
+                        	<div class="shopping-cart-widget"> <!-- Shopping Cart Begins -->
+                            	<div class="title-bar">
                                 	<a class="pull-right">Manage</a>
-                                    <h2><i class="fx-icon-shopping-cart"></i>Shopping Cart</h2>
+                                    <h2><i class="icon-shopping-cart"></i>Shopping Cart</h2>
                                 </div>
                                 
-                                <div class="s_cart_row">
+                                <div class="row">
                                 	<img src="../assets/img/movie_titles/small_images/01.jpg">
-                                    <span class="movie_title">Red Tails</span><br>
-                                    <span class="movie_price">$25.99</span><i class="fx-icon-movie"></i>
-                                    <button class="btn_small">Blu-ray</button><br>
+                                    <span class="movie-title">Red Tails</span><br>
+                                    <span class="movie-price">$25.99</span><i class="icon-movie"></i>
+                                    <button class="btn-small">Blu-ray</button><br>
                                     <a href="#">Move to Wishlist</a>
                                     <span class="separate">|</span>
                                     <a href="#" class="remove_item">Remove</a>
                                 </div>
                                 
-                                <div class="s_cart_row">
+                                <div class="row">
                                 	<img src="../assets/img/movie_titles/small_images/02.jpg">
-                                    <span class="movie_title">Buffy the Vampire Slayer, S1</span><br>
-                                    <span class="movie_price">$25.99</span><i class="fx-icon-tv"></i>
-                                    <button class="btn_small">DVD</button><br>
+                                    <span class="movie-title">Buffy the Vampire Slayer, S1</span><br>
+                                    <span class="movie-price">$25.99</span><i class="icon-tv"></i>
+                                    <button class="btn-small">DVD</button><br>
                                     <a href="#">Move to Wishlist</a>
                                     <span class="separate">|</span>
                                     <a href="#" class="remove_item">Remove</a>
                                 </div>
                                 
-                                <div class="s_cart_row">
+                                <div class="row">
                                 	<img src="../assets/img/movie_titles/small_images/03.jpg">
-                                    <span class="movie_title">Firefly</span><br>
-                                    <span class="movie_price">$39.99</span><i class="fx-icon-digital"></i>
-                                    <button class="btn_small">DVD</button><br>
+                                    <span class="movie_titles">Firefly</span><br>
+                                    <span class="movie-price">$39.99</span><i class="icon-digital"></i>
+                                    <button class="btn-small">DVD</button><br>
                                     <a href="#">Move to Wishlist</a>
                                     <span class="separate">|</span>
                                     <a href="#" class="remove_item">Remove</a>
                                 </div>
                                 
-                                <div class="checkout_box">
+                                <div class="checkout-box">
                                 	<a href="#" class="checkout_btn pull-right"></a>
                                     <span class="price">$51.98</span><br>
                                     <span class="tax">(Plus tax and shipping)</span>
                                 </div>
-                            
                             </div> <!-- Shopping Cart -->
                             
-                            <div id="wish_list_wr"> <!-- Wish List Begins -->
+                            <div class="wish-list"> <!-- Wish List Begins -->
                             
-                            	<div class="title_bar">
+                            	<div class="title-bar">
                                 	<p class="pull-right"><strong>1</strong> Item</p>
-                                    <h2><i class="fx-icon-wishlist"></i>Wish <span class="differ">List</span></h2>
+                                    <h2><i class="icon-wishlist"></i>Wish <span class="differ">List</span></h2>
                                 </div>
                                 
-                                <div class="wishlist_row">
+                                <div class="row">
                                 	<img src="../assets/img/movie_titles/small_images/03.jpg">
-                                    <span class="movie_title">The Killing, S1</span><br>
-                                    <span class="movie_price">$31.99</span><i class="fx-icon-tv"></i>
-                                    <button class="btn_small">Blu-ray</button><br>
+                                    <span class="movie-title">The Killing, S1</span><br>
+                                    <span class="movie-price">$31.99</span><i class="icon-tv"></i>
+                                    <button class="btn-small">Blu-ray</button><br>
                                     <a href="#"><strong>Pre-order</strong></a>
                                     <span class="separate">|</span>
                                     <a href="#">Remove</a>
@@ -1552,29 +783,27 @@
                             	<ul class="nav nav-pills">
                                 	<li><a href="#">Purchase All</a></li>
                                     <li class="separate">|</li>
-                                    <li class="share_t">Share this list: </li>
+                                    <li class="share-t">Share this list: </li>
                                     <li>&nbsp;</li>
                                     <li><a href="#"><img src="../assets/img/icon_facebook.png"></a></li>
                                     <li><a href="#"><img src="../assets/img/icon_twitter.png"></a></li>
                                 </ul> 
                          </div><!-- Wish List -->
-                            
                         </div>
                         
-                        <div class="clearfix"></div>
-                    	
+                    </div> <!-- End inner content -->
+                    
                 </div>
-
-            </div> <!-- FX CONTENT -->
+            </div> <!-- CONTENT -->
         </div> <!-- BODY CONTAINER ENDS -->
-
         
         
         
-        <div class="fx-footer-container"> <!-- FOOTER CONTAINER -->
-            <div class="fx-footer-content"> <!-- FOOTER CONTENT -->
-                <div class="column pull-left">
-                    <h4><span class="grey bold">FOX</span> NETWORKS</h4>
+        
+        <div class="footer-container"> <!-- FOOTER CONTAINER -->
+            <div class="footer-content"> <!-- FOOTER CONTENT -->
+            	<div class="column pull-left">
+                    <h4><span class="highlight-title">FOX</span> NETWORKS</h4>
                     <img class="separator" src="../assets/img/line_separator.png" />
                     <ul>
                         <li><a href="#">FOX Movies</a></li>
@@ -1582,9 +811,9 @@
                         <li><a href="#">Searchlight</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="column pull-left">
-                    <h4><span class="grey bold">CUSTOMER</span> SERVICE</h4>
+                    <h4><span class="highlight-title">CUSTOMER</span> SERVICE</h4>
                     <img class="separator" src="../assets/img/line_separator.png" />
                     <ul class="pull-right">
                         <li><a href="#">Contact Us</a></li>
@@ -1595,9 +824,9 @@
                         <li><a href="#">Terms of Use</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="column pull-left">
-                    <h4><span class="grey bold">NEWS</span> CORP</h4>
+                    <h4><span class="highlight-title">NEWS</span> CORP</h4>
                     <img class="separator" src="../assets/img/line_separator.png" />
                     <ul class="pull-right">
                         <li><a href="#">News & Press</a></li>
@@ -1609,9 +838,9 @@
                         <li><a href="#">FOX Sports</a></li>
                     </ul>
                 </div>
-
+                
                 <div class="column pull-left">
-                    <h4><span class="grey bold">MY</span> ACCOUNT</h4>
+                    <h4><span class="highlight-title">MY</span> ACCOUNT</h4>
                     <img class="separator" src="../assets/img/line_separator.png" />
                     <ul>
                         <li><a href="#">Sign In</a></li>
@@ -1619,24 +848,34 @@
                         <li><a href="#">Shopping Cart</a></li>
                     </ul>
                 </div>
-
             </div> <!-- FOOTER CONTENT ENDs -->
         </div> <!-- FOOTER CONTAINER ENDs-->
-
-        <div class="fx-footer-container-1"> <!-- FOOTER CONTAINER-1 -->
-            <div class="fx-footer-content">
-                <div class="pull-left">
-                    <img src="../assets/img/fox_logo.jpg" />
-                    <img class="vsep" src="../assets/img/vertical_dotted_separator.png" />
+        
+        <div class="footer-container-1"> <!-- FOOTER CONTAINER-1 -->
+            <div class="footer-content">
+            
+            	<div class="pull-right">
+                    <div class="social-links pull-right">
+                        <div class='pull-left' style="line-height: 31px;">
+                            Follow us on the web:
+                        </div>
+                        <a href="#"><i class="icon icon-twitter"></i></a>
+                        <a href="#"><i class="icon icon-pinterest"></i></a>
+                        <a href="#"><i class="icon icon-fb"></i></a>
+                        <a href="#"><i class="icon icon-gplus"></i></a>
+                    </div>
                 </div>
-                <div class="categories pull-left">
+            
+            	<img class="vsep pull-right" src="../assets/img/vertical_dotted_separator.png" />
+            
+            	<div class="categories pull-right">
                     <ul class="nav">
                         <li class="active">
                             <a href="#">Movies</a>
                         </li>
-                        <li class="sep">|</li>
+                        <li class="separator">|</li>
                         <li><a href="#">Television</a></li>
-                        <li class="sep">|</li>
+                        <li class="separator">|</li>
                         <li><a href="#">My Media</a></li>
                     </ul>
                     <div class="disclaimer pull-left">
@@ -1646,23 +885,17 @@
                     </div>
 
                 </div>
-
-                <img class="vsep" src="../assets/img/vertical_dotted_separator.png" class="pull-left" />
-
-                <div class="pull-right">
-                    <div class="social_links">
-                        <div class='pull-left' style="line-height: 31px;">
-                            Follow us on the web:
-                        </div>
-                        <a href="#"><i class="fx-icon fx-icon-twitter"></i></a>
-                        <a href="#"><i class="fx-icon fx-icon-pinterest"></i></a>
-                        <a href="#"><i class="fx-icon fx-icon-fb"></i></a>
-                        <a href="#"><i class="fx-icon fx-icon-gplus"></i></a>
-                    </div>
+                
+            	<div>
+                    <img src="../assets/img/fox_logo.jpg"/>
+                    <img class="vsep" src="../assets/img/vertical_dotted_separator.png"  />
                 </div>
+                
+                
+                
             </div>
-
         </div>  <!-- FOOTER CONTAINER-1 ENDS -->
+
         
         
         
@@ -1693,9 +926,9 @@
                 interval: false
             });
 
-            $('#fx-new-releases .pagination ul li a').bind('click', function(){
-                $('#myCarousel1').carousel($('#fx-new-releases .pagination ul li a').index(this));
-				$('#fx-new-releases .pagination ul li a').removeClass('current');
+            $('#new-releases .pagination ul li a').bind('click', function(){
+                $('#myCarousel1').carousel($('#new-releases .pagination ul li a').index(this));
+				$('#new-releases .pagination ul li a').removeClass('current');
                 $(this).addClass('current', '');
             });
 
@@ -1703,69 +936,62 @@
             $('#myCarousel2').carousel({
                 interval: false
             });
-            $('#fx-popular .pagination ul li a').bind('click', function(){
-                $('#myCarousel2').carousel($('#fx-popular .pagination ul li a').index(this));
-				$('#fx-popular .pagination ul li a').removeClass('current');
+            $('#popular .pagination ul li a').bind('click', function(){
+                $('#myCarousel2').carousel($('#popular .pagination ul li a').index(this));
+				$('#popular .pagination ul li a').removeClass('current');
                 $(this).toggleClass('current', '');
             });
 			
 			
 			
 			
-			$('#fx-new-releases .fx-right_sl').bind('click', function(){ clickedPage = $("#myCarousel1 .active").index()+1;   
-			$('#fx-new-releases .pagination ul li a').removeClass('current');
+			$('#new-releases .right-srp').bind('click', function(){ clickedPage = $("#myCarousel1 .active").index()+1;   
+			$('#new-releases .pagination ul li a').removeClass('current');
 			if(clickedPage==4) { clickedPage=0; } 
-			$('#fx-new-releases .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			$('#new-releases .pagination ul li a').eq(clickedPage).toggleClass('current','');
 			});
 			
-			$('#fx-new-releases .fx-left_sl').bind('click', function(){ clickedPage = $("#myCarousel1 .active").index()-1;   
-			$('#fx-new-releases .pagination ul li a').removeClass('current');
+			$('#new-releases .left-srp').bind('click', function(){ clickedPage = $("#myCarousel1 .active").index()-1;   
+			$('#new-releases .pagination ul li a').removeClass('current');
 			if(clickedPage==-1) { clickedPage=3; } 
-			$('#fx-new-releases .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			$('#new-releases .pagination ul li a').eq(clickedPage).toggleClass('current','');
 			});
 			
 			
 			
-			$('#fx-popular .fx-right_sl').bind('click', function(){ clickedPage = $("#myCarousel2 .active").index()+1;  
-			$('#fx-popular .pagination ul li a').removeClass('current');
+			$('#popular .right-srp').bind('click', function(){ clickedPage = $("#myCarousel2 .active").index()+1;  
+			$('#popular .pagination ul li a').removeClass('current');
 			if(clickedPage==4) { clickedPage=0; } 
-			$('#fx-popular .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			$('#popular .pagination ul li a').eq(clickedPage).toggleClass('current','');
 			});
 			
-			$('#fx-popular .fx-left_sl').bind('click', function(){ clickedPage = $("#myCarousel2 .active").index()-1;   
-			$('#fx-popular .pagination ul li a').removeClass('current');
+			$('#popular .left-srp').bind('click', function(){ clickedPage = $("#myCarousel2 .active").index()-1;   
+			$('#popular .pagination ul li a').removeClass('current');
 			if(clickedPage==-1) { clickedPage=3; } 
-			$('#fx-popular .pagination ul li a').eq(clickedPage).toggleClass('current','');
+			$('#popular .pagination ul li a').eq(clickedPage).toggleClass('current','');
 			});
 			
 			$(document).ready(function(){
 			
-				$('#close').click(function(){
-					$('.purchase_popup').hide("fast");
+				$('#close-popup').click(function(){
+					$(this).parent().parent().hide("fast");
 				});
 					
-				$("#thumbnail_box span.link").click(function(){
-					
-					$('.purchase_popup').hide("fast");
-					
+				$(".thumbnail-box span.link").click(function(){
+					$('.purchase-popup').hide("fast");
 					var position=$('#'+this.id).position();
-					$('#'+this.id+"_popup").show("slow");
-
-					$('#'+this.id+"_popup").css('top',position.top+40);
-					$('#'+this.id+"_popup").css('left',position.left +130);
+					$(".purchase-popup").css('top',position.top+60);
+					$(".purchase-popup").css('left',position.left+130);
+					$(".purchase-popup").show("slow");
 					
 				});	
 					
-				$("#thumbnail_box img").click(function(){
-					
-					$('.purchase_popup').hide("fast");
-					
-					var offset=$('#'+this.id).position();
-					$('#'+this.id+"_popup").show("slow");
-
-					$('#'+this.id+"_popup").css('top',position.top);
-					$('#'+this.id+"_popup").css('left',position.left);
-					
+				$(".thumbnail-box img").click(function(){
+					$('.purchase-popup').hide("fast");
+					var position=$('#'+this.id).position();
+					$(".purchase-popup").css('top',position.top+60);
+					$(".purchase-popup").css('left',position.left+130);
+					$(".purchase-popup").show("slow");
 				});
 					
 				$(".remove_item").click(function(){

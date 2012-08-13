@@ -1,0 +1,100 @@
+.box-shadow(@style, @c) when (iscolor(@c)) {
+  -webkit-box-shadow: @style @c;
+  -moz-box-shadow:    @style @c;
+  box-shadow:         @style @c;
+}
+
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  border-radius: @radius;  
+}
+
+
+/* --------- Right Side Shopping Cart --------- */
+
+.shopping-cart-widget { 
+	width:290px; 
+	padding-bottom:5px;	
+	margin-bottom:12px; 
+	background:#FFFFFF; 
+	border:1px solid #dcdcdc; 
+	.rounded-corners;
+	.box-shadow(0 0 5px, #dcdcdc);
+				  
+	.title-bar { 
+		height:45px; 
+		padding:0 10px;		  
+		line-height:45px; 
+		background:url(../img/bg_shopping_cart_titlebar.jpg) repeat-x;	
+		border-bottom:1px solid #d7d7d7; 
+		.rounded-corners (5px 5px 0 0);					  
+			  
+		h2	{ 
+		 	line-height:45px; 
+		}
+	}
+
+	.row	{ 
+		width:280px; 
+		padding:10px 0; 
+		margin-left:5px; 
+		overflow:hidden;
+		border-bottom:1px dashed #999999; 
+
+		img	{ 
+			display:inline;
+			float:left; 
+			width:100%; 
+			max-width:37px; 
+			padding:4px;  
+			margin-right:10px; 
+			border:1px solid #eaeaea;
+			.rounded-corners (2px);			
+			.box-shadow (0 0 5px, #dcdcdc);
+		}
+
+		a { 
+			margin-right:5px; 
+			font-size:11px; 
+		}
+	}
+								  
+	.movie-title { 
+		font-size:12px; 
+		color:#000000; 
+	}
+
+	.movie-price { 
+		padding-right:20px; 
+		font-size:12px; 
+		color:#333333; 
+	}
+
+								  
+	.separate { 
+		margin-right:5px;
+		font-size:10px; 
+		color:#cccccc; 
+	}
+
+	.checkout-box { 
+		width:260px; 
+		padding:10px; 
+		margin-left:5px; 
+		text-align:right; 
+		background:#e8f7fc; 
+
+
+		.price { 
+			font-size:22px;			
+			font-weight:bold;  
+			color:#e75d01; 
+		}
+
+		.tax { 
+			font-size:10px; 
+			color:#999999; 
+		}
+	}
+}

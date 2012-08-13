@@ -2,48 +2,6 @@
 /* CSS Document */
 
 
-/* --------- Right Side Shopping Cart --------- */
-
-#s_cart_wr						{ width:290px; border:1px solid #dcdcdc; margin-bottom:12px; background:#FFFFFF; padding-bottom:5px;
-								  -moz-box-shadow: 0px 0px 5px #dcdcdc; -webkit-box-shadow: 0px 0px 5px #dcdcdc; box-shadow: 0px 0px 5px #dcdcdc;
-								  -mox-border-radius:5px; -webkig-border-radius:5px; border-radius:5px; }
-								  
-#s_cart_wr .title_bar			{ height:45px; border-bottom:1px solid #d7d7d7; line-height:45px; padding:0 10px;
-								  background:url(../img/bg_shopping_cart_titlebar.jpg) repeat-x;
-								  -mox-border-radius:5px 5px 0 0; -webkig-border-radius:5px 5px 0 0; border-radius:5px 5px 0 0; }
-								  
-#s_cart_wr .title_bar h2		{ line-height:45px; }
-
-#s_cart_wr .s_cart_row			{ width:280px; margin-left:5px; padding:10px 0; overflow:hidden;
-								  border-bottom:1px dashed #999999; }
-								  
-#s_cart_wr .s_cart_row img		{ float:left; width:100%; max-width:37px; padding:4px;  margin-right:10px; display:inline;
-								  border:1px solid #eaeaea;
-								  -moz-box-shadow: 0px 0px 2px #dcdcdc; -webkit-box-shadow: 0px 0px 2px #dcdcdc; box-shadow: 0px 0px 2px #dcdcdc;
-								  -mox-border-radius:2px; -webkig-border-radius:2px; border-radius:2px; }
-								  
-#s_cart_wr .movie_title			{ font-size:12px; color:#000000; }
-
-#s_cart_wr .movie_price			{ font-size:12px; color:#333333; padding-right:20px; }
-
-								  
-#s_cart_wr .s_cart_row a		{ font-size:11px; margin-right:5px; }
-#s_cart_wr .separate			{ font-size:10px; color:#cccccc; margin-right:5px;}
-
-#s_cart_wr .checkout_box		{ width:260px; background:#e8f7fc; padding:10px; margin-left:5px; text-align:right; }
-
-/*.checkout_box a.checkout_btn	{ width:111px; height:40px; display:inline-block; margin-left:24px;
-								  background:url(../img/checkout_btn.png) no-repeat left top;}
-								  
-.checkout_box a.checkout_btn:hover	{ background-position:left bottom }*/
-
-.checkout_box .price			{ font-size:22px; color:#e75d01; font-weight:bold; }
-
-.checkout_box .tax				{ color:#999999; font-size:10px; }
-
-
-
-
 /* --------- Right Side Wish List --------- */
 
 #wish_list_wr					{ width:299px; margin-bottom:10px; background:#f6f6f6; padding-bottom:5px;
@@ -134,7 +92,7 @@ a.buy_blu_ray:visited			{ background-position:0px -80px; }
 a.buy_blu_ray:hover				{ height:30px; background-position:0px -40px; }
 a.buy_blu_ray::acitve			{ height:30px; background-position:0px -40px; }
 
-#fx-feature .pagination			{ left:90px;  top:-10px; float:none; }
+#feature .pagination			{ left:90px;  top:-10px; float:none; }
 
 
 
